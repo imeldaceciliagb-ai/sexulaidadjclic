@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="actividades_cuadernillo" version="0.1.3">
+ <settings>
+  <title>ACTIVIDADES CUADERNILLO</title>
+  <revision description="created" date="10/5/26" />
+  <author name="Cecilia García" />
+  <author name="MArtha Fernandez" />
+  <organization name="UNISON CABORCA" />
+  <language>es</language>
+  <description>
+   <p>Interactivo para las fase 5 de edycación básica en el campo formativo Saberes y pensamiento cientíco.</p>
+  </description>
+  <descriptors area-codes="mat, exp" level-codes="PRI" />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es">
+    <p>Interactivo para las fase 5 de edycación básica en el campo formativo Saberes y pensamiento cientíco.</p>
+   </description>
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="PORTADA" />
+  <item name="PARTES DEL APARATO REPRODUCTOR MASCULINO" />
+  <item name="RELACIÓN IMAGEN IMAGEN" />
+  <item name="ROMPECABEZAS" />
+  <item name="crucigrama" />
+  <item name="sopa de letras" />
+  <item name="texto 1" />
+  <item name="texto 2" />
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="PARTES DEL APARATO REPRODUCTOR MASCULINO" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="22" />
+      <color background="0x66CCFF" />
+     </style>
+     <p>Relaciona la imagen con su nombre</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Century Gothic" size="22" />
+      <color background="0x66CCFF" />
+     </style>
+     <p>¡Lo lograste!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x99FF99">
+     <image name="IMAGEN 1 APARATO REP MASC.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCCCC" border="true" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="IMAGEN 1 APARATO REP MASC.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="22" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="PENE-resized1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="PROSTATA-resized1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="TESTÍCULOS.jpg">
+     <style>
+      <font family="Century Gothic" size="22" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="300.0" cellHeight="200.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>APARATO REPRODUCTOR MASCULINO</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>PENE</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>PRÓSTATA</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>TESTÍTUCULOS</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="PORTADA" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="22" />
+      <color background="0xFFFF33" />
+     </style>
+     <p>Bienvenidos a esta revisión de los temas vistos en clase, disfruta los juegos</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFF9999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x66FF99" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="600.0" cellHeight="400.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="PORTADA-resized.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="22" />
+      <color background="0x66FF99" />
+     </style>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="RELACIÓN IMAGEN IMAGEN" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="ORO.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="22" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="ROMPECABEZAS" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+    </cell>
+    <cell type="final">
+     <style />
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="3" border="true" image="CICLO MENSTRUAL-resized.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="3" rows="4" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@textGrid.CrossWord" name="crucigrama" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="20" bold="true" />
+      <color background="0x00FF99" />
+     </style>
+     <p>RESUELVE EL CRUCIGRAMA</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Century Gothic" size="17" />
+      <color background="0x00FF99" />
+     </style>
+     <p>BIEN HECHO</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FF33" border="true" />
+   </settings>
+   <textGrid rows="15" columns="15" cellWidth="20.0" cellHeight="20.0" border="true">
+    <style>
+     <color foreground="0x99FFFF" background="0xFF6666" inactive="0x66FF66" border="0xFFFF33" />
+    </style>
+    <text>
+     <row>****R**********</row>
+     <row>****E**********</row>
+     <row>****P**********</row>
+     <row>*MATRIZ********</row>
+     <row>****O**********</row>
+     <row>****D**********</row>
+     <row>****U**********</row>
+     <row>****C**********</row>
+     <row>****C**********</row>
+     <row>TESTICULO******</row>
+     <row>****O**********</row>
+     <row>****N**********</row>
+     <row>***************</row>
+     <row>***************</row>
+     <row>***************</row>
+    </text>
+   </textGrid>
+   <cells rows="1" cols="3" cellWidth="200.0" cellHeight="60.0" border="true" id="acrossClues">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="11" item="1" />
+    <cell id="11" item="0" />
+    <cell id="10" item="1" />
+    <cell id="10" item="0" />
+    <cell id="9" item="1" />
+    <cell id="9" item="0">
+     <style>
+      <font family="Century Gothic" size="17" />
+      <color background="0x00FF99" />
+     </style>
+     <p>órgano del aparato reprod masculino dónde se producen los espermatozoides</p>
+    </cell>
+    <cell id="8" item="0" />
+    <cell id="8" item="0" />
+    <cell id="7" item="1" />
+    <cell id="7" item="0" />
+    <cell id="6" item="1" />
+    <cell id="6" item="0" />
+    <cell id="5" item="1" />
+    <cell id="5" item="0" />
+    <cell id="4" item="1" />
+    <cell id="4" item="0" />
+    <cell id="3" item="1" />
+    <cell id="3" item="0">
+     <style>
+      <font family="Century Gothic" size="17" />
+      <color background="0x00FF99" />
+     </style>
+     <p>órgano del aparato reproductor femenino donde se desarrolla el embrión.</p>
+    </cell>
+    <cell id="2" item="1" />
+    <cell id="2" item="0" />
+    <cell id="1" item="1" />
+    <cell id="1" item="0" />
+    <cell id="0" item="1" />
+    <cell id="0" item="0">
+     <style>
+      <font family="Century Gothic" size="17" />
+      <color background="0x00FF99" />
+     </style>
+    </cell>
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <cells rows="1" cols="3" cellWidth="200.0" cellHeight="60.0" border="true" id="downClues">
+    <style />
+    <cell id="13" item="0" />
+    <cell id="10" item="0" />
+    <cell id="9" item="0" />
+    <cell id="8" item="1" />
+    <cell id="8" item="0" />
+    <cell id="0" item="1" />
+    <cell id="0" item="0">
+     <style>
+      <font family="Century Gothic" size="17" />
+      <color background="0x00FF99" />
+     </style>
+    </cell>
+    <cell id="7" item="1" />
+    <cell id="7" item="0" />
+    <cell id="6" item="2" />
+    <cell id="6" item="1" />
+    <cell id="6" item="0" />
+    <cell id="1" item="2" />
+    <cell id="1" item="1" />
+    <cell id="1" item="0" />
+    <cell id="2" item="2" />
+    <cell id="2" item="1" />
+    <cell id="2" item="0" />
+    <cell id="3" item="2" />
+    <cell id="3" item="1" />
+    <cell id="3" item="0" />
+    <cell id="5" item="2" />
+    <cell id="5" item="1" />
+    <cell id="5" item="0" />
+    <cell id="4" item="1" />
+    <cell id="4" item="0">
+     <style>
+      <font family="Century Gothic" size="17" />
+      <color background="0x00FF99" />
+     </style>
+     <p>Mecanismo por el cual se perpetúa una especie.</p>
+    </cell>
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="sopa de letras" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+    </cell>
+    <cell type="final">
+     <style />
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <textGrid rows="15" columns="15" cellWidth="20.0" cellHeight="20.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>CONDON*********</row>
+     <row>***************</row>
+     <row>***I***********</row>
+     <row>***M***********</row>
+     <row>***PASTILLA****</row>
+     <row>***L***********</row>
+     <row>***A***********</row>
+     <row>***N***********</row>
+     <row>***T***********</row>
+     <row>***E***********</row>
+     <row>***************</row>
+     <row>***************</row>
+     <row>***************</row>
+     <row>***************</row>
+     <row>***************</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">CONDON</clue>
+    <clue id="1">IMPLANTE</clue>
+    <clue id="2">PASTILLA</clue>
+   </clues>
+  </activity>
+  <activity class="@text.Complete" name="texto 1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Century Gothic" size="24" />
+      <color background="0xFFFF99" />
+     </style>
+     <p>Escribe la palabra que falta en el texto</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Century Gothic" size="22" />
+      <color background="0xFFFF99" />
+     </style>
+     <p>¡Bien hecho!</p>
+    </cell>
+   </messages>
+   <settings margin="8" useOrder="true" report="true" reportActions="false">
+    <container bgColor="0xFFCCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x99FF99" border="true">
+     <size width="600" height="500" />
+    </window>
+   </settings>
+   <checkButton>Revisa tsu respuestas</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <cell width="350" height="170" image="TESTÍCULOS.jpg">
+       <style>
+        <font family="Century Gothic" size="22" />
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <text family="Century Gothic" size="26" foreground="0x990099">Los </text>
+      <target>testículos</target>
+      <text family="Century Gothic" size="26" foreground="0x990099"> son parte del sistema reproductor masculino y en ellos se forman los </text>
+      <target>espermatozoides</target>
+      <text family="Century Gothic" size="26" foreground="0x990099">.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" checkAccents="false" checkPunctuation="false" />
+  </activity>
+  <activity class="@text.Complete" name="texto 2" code="">
+   <description />
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="600" height="500" />
+    </window>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" tabWidth="12" size="11" bold="false" italic="false" />
+    <section>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12" />
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12" />
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12" Alignment="1">
+      <cell width="400" height="200" image="PROSTATA-resized1.jpg">
+       <style>
+        <font family="Century Gothic" size="22" />
+        <color background="0xFFFFFF" />
+       </style>
+      </cell>
+     </p>
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12" />
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12" />
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12" />
+     <p name="default" family="Arial" background="0xFFFFFF" tabWidth="12" Alignment="1">
+      <text family="Century Gothic" size="24" foreground="0x009900">En la </text>
+      <target name="target" foreground="0x009900" target="true" family="Century Gothic" size="24">próstata</target>
+      <text family="Century Gothic" size="24" foreground="0x009900"> se produce el semen, donde se transportan los espermatozoides y al ser expulsado del cuerpo del hombre, si entra en contacto con un óvulo se puede generar una </text>
+      <target name="target" foreground="0x009900" target="true" family="Century Gothic" size="24">fecundación</target>
+      <text family="Century Gothic" size="24" foreground="0x009900">, que es la unión del óvulo y el espermatozoide.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" checkAccents="false" checkPunctuation="false" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="CICLO MENSTRUAL-resized.jpg" file="ciclo_menstrual-resized.jpg" />
+  <media name="IMAGEN 1 APARATO REP MASC.jpg" file="imagen_1_aparato_rep_masc.jpg" />
+  <media name="ORO.jpg" file="oro.jpg" />
+  <media name="PENE-resized1.jpg" file="pene-resized1.jpg" />
+  <media name="PORTADA-resized.jpg" file="portada-resized.jpg" />
+  <media name="PROSTATA-resized1.jpg" file="prostata-resized1.jpg" />
+  <media name="TESTÍCULOS.jpg" file="testiculos.jpg" />
+ </mediaBag>
+</JClicProject>
+

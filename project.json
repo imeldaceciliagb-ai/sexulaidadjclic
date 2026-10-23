@@ -1,0 +1,59 @@
+{
+  "title": "ACTIVIDADES CUADERNILLO",
+  "author": "Cecilia García, MArtha Fernandez",
+  "school": "UNISON CABORCA",
+  "date": "5/10/26",
+  "langCodes": [
+    "es"
+  ],
+  "languages": {
+    "es": "español"
+  },
+  "areaCodes": [
+    "mat",
+    "exp"
+  ],
+  "areas": {
+    "es": "Matemáticas, Ciencias experimentales"
+  },
+  "levelCodes": [
+    "PRI"
+  ],
+  "levels": {
+    "es": "Primaria (6-12)"
+  },
+  "description": {
+    "es": "Interactivo para las fase 5 de edycación básica en el campo formativo Saberes y pensamiento cientíco."
+  },
+  "license": {
+    "es": "Esta obra está bajo una licencia de Creative Commons <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "es"
+  ],
+  "mainFile": "actividades_cuadernillo.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 8,
+  "mediaFiles": 12,
+  "totalSize": 494646,
+  "files": [
+    "actividades_cuadernillo.jclic",
+    "actividades_cuadernillo.jclic.js",
+    "ciclo_menstrual-resized.jpg",
+    "favicon.ico",
+    "icon-192.png",
+    "icon-72.png",
+    "imagen_1_aparato_rep_masc.jpg",
+    "imsmanifest.xml",
+    "index.html",
+    "oro.jpg",
+    "pene-resized1.jpg",
+    "portada-resized.jpg",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "prostata-resized1.jpg",
+    "testiculos.jpg"
+  ]
+}
